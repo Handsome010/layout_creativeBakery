@@ -1,20 +1,31 @@
 @use './utils/vars' as vars;
 @use './utils/mixins' as mix;
-@use './utils/text-styles.scss' as styles;
+@use './utils/text-styles' as styles;
 
 @use 'utils';
 @use 'fonts';
-@use './blocks/header.scss';
-@use './blocks/nav.scss';
-@use './blocks/page.scss';
-@use './blocks/hero.scss';
-@use './utils/text-styles.scss';
-@use './blocks/menu.scss';
-@use './blocks/top-bar.scss';
+@use './blocks/header';
+@use './blocks/nav';
+@use './blocks/page';
+@use './blocks/hero';
+@use './utils/text-styles';
+@use './blocks/menu';
+@use './blocks/top-bar';
+@use './blocks/products';
+@use './blocks/section';
+@use './blocks/product-card';
+@use './blocks/about-us';
+@use './blocks/footer';
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
 
 .default-button--bordered {
-
   @include mix.link-reset;
   @include styles.uppercase-text-styles;
 

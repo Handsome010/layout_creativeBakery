@@ -1,7 +1,7 @@
 @use '../utils/text-styles.scss' as styles;
 
 .page {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
   &__body {
     @include styles.body-text-styles;
     &:has(.menu:target) {

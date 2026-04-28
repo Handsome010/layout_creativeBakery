@@ -6,10 +6,10 @@
   top: 0;
   right: 0;
   left: 0;
+  pointer-events: none;
   position: fixed;
   transition: transform 1s;
-  transform: TranslateX(-100vw);
-  display: none;
+  transform: translateX(-100vw);
   height: 100vh;
   overflow: hidden;
   background-color: #fff;
@@ -22,7 +22,7 @@
   }
 
   &:target {
-    display: block;
+    pointer-events: all;
     transform: translateX(0);
   }
 
